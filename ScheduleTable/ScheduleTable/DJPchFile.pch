@@ -1,0 +1,43 @@
+//
+//  DJPchFile.pch
+//  ScheduleTable
+//
+//  Created by Mr.Deng on 16/1/5.
+//  Copyright © 2016年 Mr.Deng. All rights reserved.
+//
+
+#ifndef DJPchFile_pch
+#define DJPchFile_pch
+
+#import "Masonry.h"
+#import "SVProgressHUD.h"
+#import "DJFunction.h"
+#import "DJSingletonData.h"
+#import "DJScheduleModel.h"
+#import "DJNavBaseViewController.h"
+
+//沙盒Key
+#define scheduleSingleWeekDataKey @"singleWeek"
+#define scheduleDoubleWeekDataKey @"doubleWeek"
+
+#define kNavButtonWidth 30
+#define kNavButtonHeight 30
+
+//根据rgb值返回一个颜色
+#define DJColor(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define DJRandomColor [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1.0]
+
+//导航栏高度
+#define kNaviBarHeight 64
+
+//屏幕宽高
+#define kUIScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define kUIScreenHeight [UIScreen mainScreen].bounds.size.height
+
+// 根据屏幕高度判断手机设备
+#define isIPhone5 ([UIScreen mainScreen].bounds.size.height == 568)
+#define isIPhone6 ([UIScreen mainScreen].bounds.size.height == 667)
+#define isIPhone6p ([UIScreen mainScreen].bounds.size.height == 736)
+
+
+#endif /* DJPchFile_pch */
